@@ -1,104 +1,100 @@
-News Aggregator using Hugging Face API
+**📰 News Aggregator using NewsAPI**
 
-📌 Project Overview
+## 📌 Project Overview
 
-The News Aggregator is a smart AI-powered application that collects, analyzes, and summarizes news articles from various sources. It leverages the Hugging Face API to process and categorize news content, offering users concise and relevant updates. This project aims to save time by presenting key insights instead of lengthy articles.
+The **News Aggregator** is a smart AI-powered application that collects, analyzes, and presents news articles from various sources. It leverages **NewsAPI** to fetch real-time news content, providing users with categorized and summarized news updates for a quick and efficient reading experience.
 
-🚀 Features
+## 🚀 Features
 
-📡 Fetch News: Retrieve news articles from multiple sources.
+📡 **Fetch News**: Retrieve real-time news articles from multiple sources using NewsAPI.
 
-🧠 AI Summarization: Uses NLP models from Hugging Face to summarize articles.
+🔍 **Categorization**: Automatically classifies news into different categories (e.g., politics, sports, technology, etc.).
 
-🔍 Categorization: Automatically classifies news into different categories.
+📌 **Keyword-Based Search**: Allows users to search for news articles based on specific keywords.
 
-📌 Keyword Extraction: Identifies key topics in articles.
+🎨 **User-Friendly Interface**: Simple and intuitive UI for easy news browsing.
 
-🎨 User-Friendly Interface: Simple and intuitive UI for easy news browsing.
+🏎 **Fast and Efficient**: Fetches and displays news quickly for a smooth user experience.
 
-🏎 Fast and Efficient: Processes and delivers news summaries quickly.
+🛠 **Bookmarking**: Users can save favorite articles for later reading.
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
-Python
+- **Python**
+- **Flask/FastAPI** (Backend)
+- **NewsAPI** (for fetching real-time news)
+- **HTML, CSS, JavaScript** (Frontend UI)
+- **SQLite/MongoDB** (Database for storing saved news)
 
-Flask/FastAPI (Backend)
+## 📥 Installation & Setup
 
-Hugging Face API (for NLP models)
+### 1️⃣ Clone the Repository
 
-HTML, CSS, JavaScript (Frontend UI)
+git clone https://github.com/BadavathArjun/News-Aggregator-HF.git
+cd News-Aggregator-HF
 
-News API (optional, for fetching real-time news)
+### 2️⃣ Create a Virtual Environment (Optional)
+```sh
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
 
-SQLite/MongoDB (Database for storing news)
+### 3️⃣ Install Dependencies
+```sh
+pip install -r requirements.txt
+```
 
-📥 Installation & Setup
+### 4️⃣ Set Up NewsAPI Key
+1. Sign up at [NewsAPI](https://newsapi.org/)
+2. Generate an API key from your account.
+3. Create a **.env** file in the project root and add:
+```sh
+NEWS_API_KEY=your_api_key_here
+```
 
-1️⃣ Clone the Repository
+### 5️⃣ Run the Application
+```sh
+python app.py  # Or uvicorn main:app --reload (if using FastAPI)
+```
 
- git clone [https://github.com/your-badavatharjun/News-Aggregator-HF.git
- cd News-Aggregator-HF](https://github.com/BadavathArjun/News-Aggregator-HF?tab=readme-ov-file)
+## 🎯 How to Use
 
-2️⃣ Create a Virtual Environment (Optional)
+1. Open the application in your browser.
+2. Enter a keyword or select a news category.
+3. The system fetches articles using NewsAPI and displays them.
+4. Click on an article to read more or bookmark it for later.
 
- python -m venv venv
- source badav/bin/activate  # On Windows use: venv\Scripts\activate
+## 🔗 API Endpoints (If Applicable)
 
-3️⃣ Install Dependencies
+| Method | Endpoint       | Description                         |
+|--------|---------------|-------------------------------------|
+| GET    | `/news`        | Fetch latest news articles using NewsAPI |
+| GET    | `/news?query=keyword` | Search news based on keywords |
+| GET    | `/categories`  | Fetch news based on categories    |
+| POST   | `/bookmark`    | Save an article to bookmarks      |
+| GET    | `/bookmarks`   | Retrieve saved articles           |
 
- pip install -r requirements.txt
-
-4️⃣ Set Up Hugging Face API Key
-
-Sign up at Hugging Face
-
-Generate an API key from your account.
-
-Create a .env file in the project root and add:
-
-HUGGINGFACE_API_KEY=your_api_key_here
-
-5️⃣ Run the Application
-
- python app.py  # Or uvicorn main:app --reload (if using FastAPI)
-
-🎯 How to Use
-
-Open the application in your browser.
-
-Enter a keyword or select a news category.
-
-The system fetches articles, summarizes them, and displays key insights.
-
-Click on an article to read more.
-
-🔗 API Endpoints (If Applicable)
-
-![image](https://github.com/user-attachments/assets/8dbf19d7-81ba-47b3-bee0-49a6ced68281)
-
-📸 Screenshots
+## 📸 Screenshots
 
 ![image](https://github.com/user-attachments/assets/71eb5ebc-f54b-41b1-9e73-559d7639f554)
 ![image](https://github.com/user-attachments/assets/a54428f5-f179-4a65-9ada-4f90b2afe1c6)
 
+## 🏗️ Future Improvements
 
+✅ **Implement multilingual news support**
+✅ **Enhance news filtering options**
+✅ **Implement user authentication and preferences**
+✅ **Integrate real-time news notifications**
+✅ **Improve UI/UX for better readability**
 
-🏗️ Future Improvements
-
-✅ Add multilingual news support.
-
-✅ Implement user authentication and preferences.
-
-✅ Integrate real-time news notifications.
-
-👨‍💻 Contributing
+## 👨‍💻 Contributing
 
 Contributions are welcome! If you want to improve this project:
+1. Fork the repository.
+2. Create a new branch.
+3. Submit a pull request.
 
-Fork the repository.
+## 📜 License
 
-Create a new branch.
+This project is licensed under the **MIT License**.
 
-📜 License
-
-This project is licensed under the MIT License.
