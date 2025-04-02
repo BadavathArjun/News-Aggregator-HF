@@ -36,8 +36,8 @@ SQLite/MongoDB (Database for storing news)
 
 1️⃣ Clone the Repository
 
- git clone https://github.com/your-badavatharjun/News-Aggregator-HF.git
- cd News-Aggregator-HF
+ git clone [https://github.com/your-badavatharjun/News-Aggregator-HF.git
+ cd News-Aggregator-HF](https://github.com/BadavathArjun/News-Aggregator-HF?tab=readme-ov-file)
 
 2️⃣ Create a Virtual Environment (Optional)
 
